@@ -1,0 +1,19 @@
+Image Analysis Results
+======================
+
+File: ../test_images/white_circle.png
+
+Texture Analysis (IDM):
+- IDM value: 0.993902
+- Interpretation: Very homogeneous texture
+
+Morphological Analysis:
+- Maximum diameter: 100.00 pixels
+- Area: 7704.0 pixels²
+- Perimeter: 329.7 pixels
+- Circularity: 0.891
+- Interpretation: Object medium size (diameter: 100 pixels)
+
+Diameter Points:
+- Point 1: (100.000, 50.000)
+- Point 2: (100.000, 150.000)

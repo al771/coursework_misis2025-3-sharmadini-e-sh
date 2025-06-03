@@ -1,0 +1,3 @@
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/ImageAnalysis.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/edit_cache.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/rebuild_cache.dir
