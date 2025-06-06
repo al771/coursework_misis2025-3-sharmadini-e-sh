@@ -1,0 +1,5 @@
+/Users/elenasarmadini/Documents/ImageAnalysis/install/bin/ImageAnalysis
+/Users/elenasarmadini/Documents/ImageAnalysis/install/include/MorphologyAnalyzer.h
+/Users/elenasarmadini/Documents/ImageAnalysis/install/include/ImageLoader.h
+/Users/elenasarmadini/Documents/ImageAnalysis/install/include/TextureAnalyzer.h
+/Users/elenasarmadini/Documents/ImageAnalysis/install/./README.md

@@ -194,7 +194,7 @@ void createTestImages() {
     std::cout << "Test images created in ../test_images/ folder" << std::endl;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
 
     std::cout << "============================================================" << std::endl;
     std::cout << "              IMAGE ANALYSIS                               " << std::endl;
@@ -202,29 +202,40 @@ int main() {
     std::cout << "============================================================" << std::endl;
     
     std::string imagePath;
-    
-    std::cout << "\nEnter image path: ";
-    std::getline(std::cin, imagePath);
+
+    if (argc > 1) {
+        imagePath = argv[1];
+        std::cout << "\nImage path provided via command line: " << imagePath << std::endl;
+    } else {
+        std::cout << "\nEnter image path: ";
+        std::getline(std::cin, imagePath);
+    }
     
     AnalysisResults results = analyzeImage(imagePath);
     
     if (results.idm_value > 0 || results.diameter_result.maxDiameter > 0) {
         printResults(results);
         
+
         char saveChoice;
         std::cout << "\nSave results to file? (y/n): ";
         std::cin >> saveChoice;
         
-        std::string filename = "../results/result_" +
-            std::to_string(std::time(nullptr)) + ".txt";
-        saveResultsToFile(results, filename);
+        if (saveChoice == 'y' || saveChoice == 'Y') {
+            std::string base_filename = imagePath.substr(imagePath.find_last_of("/\\") + 1);
+            std::string::size_type const p(base_filename.find_last_of('.'));
+            std::string file_without_ext = base_filename.substr(0, p);
+            
+            std::string filename = "../results/result_" + file_without_ext + ".txt";
+            saveResultsToFile(results, filename);
+        }
+
     } else {
-        std::cout << "\nAnalysis failed. Check image validity." << std::endl;
+        std::cout << "\nAnalysis failed. Check image path or file validity." << std::endl;
     }
     
-    std::cout << "\nProgram completed. Press Enter to exit..." << std::endl;
-    std::cin.ignore();
-    std::cin.get();
+    std::cout << "\nProgram completed." << std::endl;
     
     return 0;
 }
+

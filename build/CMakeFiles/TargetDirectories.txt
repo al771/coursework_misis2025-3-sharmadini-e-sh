@@ -1,3 +1,7 @@
 /Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/ImageAnalysis.dir
 /Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/edit_cache.dir
 /Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/rebuild_cache.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/list_install_components.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/install.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/install/local.dir
+/Users/elenasarmadini/Documents/ImageAnalysis/build/CMakeFiles/install/strip.dir
